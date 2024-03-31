@@ -12,6 +12,7 @@ class AuthorSerializer(serializers.ModelSerializer):
     def get_books_count(self, instance):
         return instance.books.count()
 
+
 class AuthorBookSerializer(serializers.Serializer):
     id = serializers.IntegerField()
     title = serializers.CharField()

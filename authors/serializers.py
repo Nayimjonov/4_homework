@@ -13,7 +13,6 @@ class AuthorSerializer(serializers.ModelSerializer):
         return instance.books.count()
 
 
-
 class AuthorBookSerializer(serializers.Serializer):
     id = serializers.IntegerField()
     title = serializers.CharField()

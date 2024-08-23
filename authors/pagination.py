@@ -7,3 +7,4 @@ class AuthorListPagination(PageNumberPagination):
 
 class AuthorBookListPagination(PageNumberPagination):
     page_size = 8
+
